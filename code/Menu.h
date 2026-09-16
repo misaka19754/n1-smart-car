@@ -1,0 +1,114 @@
+/*
+ * Menu.h
+ *
+ *  Created on: 2026��3��24��
+ *      Author: misaka19754
+ */
+
+#ifndef CODE_MENU_H_
+#define CODE_MENU_H_
+
+//��������
+void  Menu(void);//�˵�����
+
+
+
+//�ṹ������
+typedef struct
+{
+    int current;
+    int up;//���Ϸ�������
+    int down;//���·�������
+    int enter;//ȷ��������
+    void (*current_operation)();//��ǰҳ���������Ҫִ�е���ʾ����������һ������ָ��
+}key_table;
+
+
+
+extern  key_table table[100];
+
+extern void fun_a1();
+extern void fun_b1();
+extern void fun_c1();
+extern void fun_d1();
+extern void fun_e1();
+extern void fun_f1();
+
+///////////////////////////////////////////////
+
+extern void fun_a21();
+extern void fun_a22();
+extern void fun_a23();
+extern void fun_a24();
+extern void fun_a25();
+extern void fun_a26();
+
+extern void fun_b21();
+extern void fun_b22();
+extern void fun_b23();
+extern void fun_b24();
+extern void fun_b25();
+extern void fun_b26();
+
+extern void fun_c21();
+extern void fun_c22();
+extern void fun_c23();
+extern void fun_c24();
+extern void fun_c25();
+extern void fun_c26();
+
+extern void fun_d21();
+extern void fun_d22();
+extern void fun_d23();
+extern void fun_d24();
+extern void fun_d25();
+extern void fun_d26();
+
+extern void fun_e21();
+extern void fun_e22();
+extern void fun_e23();
+extern void fun_e24();
+extern void fun_e25();
+extern void fun_e26();
+
+//////////////////////////////////////////////
+
+extern void fun_a31();
+extern void fun_a32();
+extern void fun_a33();
+extern void fun_a34();
+extern void fun_a35();
+
+extern void fun_b31();
+extern void fun_b32();
+extern void fun_b33();
+extern void fun_b34();
+extern void fun_b35();
+
+extern void fun_c31();
+extern void fun_c32();
+extern void fun_c33();
+extern void fun_c34();
+extern void fun_c35();
+
+extern void fun_d31();
+extern void fun_d32();
+extern void fun_d33();
+extern void fun_d34();
+extern void fun_d35();
+
+extern void fun_e31();
+extern void fun_e32();
+extern void fun_e33();
+extern void fun_e34();
+extern void fun_e35();
+
+
+
+extern void fun_0();
+
+extern int SUB_flag;
+void Sub_select(int sub);
+
+
+#endif /* CODE_MENU_H_ */
